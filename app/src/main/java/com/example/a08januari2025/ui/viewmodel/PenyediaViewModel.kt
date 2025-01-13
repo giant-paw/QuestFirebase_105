@@ -10,6 +10,7 @@ import com.example.a08januari2025.MahasiswaApplications
 object PenyediaViewModel {
     val Factory = viewModelFactory {
         initializer { HomeViewModel(aplikasiMahasiswa().container.mahasiswaRepository) }
+        initializer { InsertViewModel(aplikasiMahasiswa().container.mahasiswaRepository) }
     }
 }
 
