@@ -36,6 +36,23 @@ class NetworkMahasiswaRepository(
         }
     }
 
+    override fun getAllMhs(): Flow<List<Mahasiswa>> = callbackFlow{
+        val mhsCollection = firestore.collection("Mahasiswa")
+            .orderBy("nim", Query.Direction.DESCENDING)
+            .addSnapshotListener{
+                    value, error ->
+                if (value != null){
+                    val mhsList = value.documents.mapNotNull {
+                        it.toObject(Mahasiswa::class.java)
+                    }
+                    trySend(mhsList)
+                }
+            }
+        awaitClose {
+            mhsCollection.remove()
+        }
+    }
+
     override suspend fun updateMahasiswa(nim: String, mahasiswa: Mahasiswa) {
         TODO("Not yet implemented")
     }
