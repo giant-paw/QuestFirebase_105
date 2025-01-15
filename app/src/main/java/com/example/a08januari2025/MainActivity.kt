@@ -11,6 +11,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import com.example.a08januari2025.ui.navigasi.PengelolaHalaman
 import com.example.a08januari2025.ui.theme._08januari2025Theme
 import com.example.a08januari2025.ui.view.HomeScreen
 
@@ -20,11 +21,7 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             _08januari2025Theme {
-                Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    HomeScreen(
-                        navigateToItemEntry = {}, modifier = Modifier.padding(innerPadding)
-                    )
-                }
+                    PengelolaHalaman(modifier = Modifier)
             }
         }
     }
