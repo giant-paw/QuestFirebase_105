@@ -1,4 +1,19 @@
-preview tugas firebase
+UCP PAM (15 Januari 2025)
+
+Home
+
+![1](https://github.com/user-attachments/assets/c8932c50-a1de-4a97-8368-88a7035a0cb0)
+
+Insert
+
+![2](https://github.com/user-attachments/assets/52003bc1-8f82-4074-8f4e-19fcc31060c3)
+
+Jika ada data belum di isi
+
+![3](https://github.com/user-attachments/assets/012fc14b-f5b2-432c-af8e-5e8386a56e4d)
+
+
+preview tugas firebase (08 Januari 2025)
 
 ![Screenshot 2025-01-15 082806](https://github.com/user-attachments/assets/bccd338d-b7af-468d-8610-46cc86897964)
 
